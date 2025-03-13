@@ -10,3 +10,8 @@ endpoints:
     networkVisibilities:
       - Public
     schemaFilePath: openapi.yaml
+files:
+  env:
+    - name: ARGO
+      valueFrom:
+        configForm: {}
