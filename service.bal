@@ -17,7 +17,7 @@ Employee[] employees = [{id: 1, name: "John", address: "Colombo"},
                            {id: 2, name: "Doe", address: "Kandy"},
                            {id: 3, name: "Smith", address: "Galle"}];
 
-service /employee/v1 on employeeListener {
+service / on employeeListener {
     resource function get employees() returns EmployeeList {
         EmployeeList employeeList = {count: 3, employees: employees};
         return employeeList;
